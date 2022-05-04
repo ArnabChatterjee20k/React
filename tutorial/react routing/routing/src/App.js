@@ -26,7 +26,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
-        <Route path="/profile" exact component={Profile} />
+        <Route path="/profile/:id" exact component={Profile} />
 
         {/* it will be shown if the page not exists */}
         <Route component={Error}/>
