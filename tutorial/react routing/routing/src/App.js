@@ -9,7 +9,7 @@ import Home from './components/Home';
 import Profile from './components/Profile';
 function App() {
   return (
-    <BrowserRouter basename='react-router-dom'>
+    <BrowserRouter forceRefresh>
       <div class="App">
         <Header />
       </div>
