@@ -1,10 +1,12 @@
+import { useParams } from "react-router-dom"
+
 function Profile({match}) {
-  console.log(match) // we cant use it directly in the jsx as it will give error as Objects are not valid as a React child
+  console.log(useParams())
   return (
     <>
       <div>
-        <h1>Using match prop</h1>
-        Profile id={match.params.id}
+        <h1>using Use Params</h1>
+        id is {useParams().id}
       </div>
     </>
   )
