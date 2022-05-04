@@ -7,9 +7,10 @@ import About from './components/About';
 import Header from './components/Header';
 import Home from './components/Home';
 import Profile from './components/Profile';
+import { Error } from './components/Error';
 function App() {
   return (
-    <BrowserRouter forceRefresh>
+    <BrowserRouter>
       <div class="App">
         <Header />
       </div>
@@ -26,6 +27,9 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
         <Route path="/profile" exact component={Profile} />
+
+        {/* it will be shown if the page not exists */}
+        <Route component={Error}/>
       </Switch>
     </BrowserRouter>
   )
