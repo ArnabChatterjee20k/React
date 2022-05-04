@@ -32,7 +32,9 @@ function App() {
       </li>
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/about" exact component={About} />
+        <Route path="/about">
+          <About log={log}/>
+        </Route>
         <Route path="/profile/:id">
           {log?<Profile/>:<Redirect to="/"/>}
         </Route>
