@@ -27,7 +27,7 @@ export const Navbar = () => {
             {/* Mobile Nav */}
             <div className={!Nav ?
                 'ease-in-out duration-500 fixed left-0 top-0 h-full w-[60%] bg-[#000300] border-r border-r-gray-900'
-                : 'ease-in duration-500 fixed left-[-100%]'}>
+                : 'ease-in duration-500 fixed left-[-100%] top-0 h-full w-[60%]'}>
                 <h1 className='m-4 w-full text-3xl font-bold text-[#00df9a]'>React</h1>
                 <ul className='uppercase'>
                     <li className='p-4 border-b border-gray-600'>Home</li>
