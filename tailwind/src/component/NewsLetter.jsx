@@ -9,7 +9,7 @@ export const NewsLetter = () => {
                 <div className="my-4 px-4">
                     <div className="flex flex-col sm:flex-row items-center justify-between w-full">
                         <input type="email" placeholder="Enter Email" className="p-3 flex w-full rounded-md text-black"/>
-                        <button className='bg-[#00df9a] w-[200px] rounded-md font-medium ml-4 my-6 mx-auto px-6 py-3 text-black'>Notify me</button>
+                        <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3 text-black'>Notify me</button>
                     </div>
                     <p>We care about your data. Read our<span className="text-[#00df9a]"> Privacy Policy</span></p>
                 </div>
