@@ -1,12 +1,23 @@
 import {
     FaDribbbleSquare, FaFacebookSquare, FaGithubSquare, FaInstagramSquare, FaTwitterSquare
 } from 'react-icons/fa'
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import animation from "../lottie/react.json"
 
 export const Footer = () => {
     return (
         <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
             <div>
-                <h1 className='w-full text-3xl font-bold text-[#00df9a]'>React</h1>
+                <div className='flex items-center'>
+                    <h1 className='text-3xl font-bold text-[#00df9a]'>React</h1>
+                    <Player
+                        autoplay
+                        loop
+                        src={animation}
+                        style={{ height: '50px', width: '50px' }}
+                    >
+                    </Player>
+                </div>
                 <p className='py-4'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat iure amet placeat modi eligendi, hic nemo quis, quas non et architecto porro, voluptates reprehenderit deserunt facere ipsa natus harum earum.</p>
                 <div className='flex justify-between md:w-[75%] my-6'>
                     <FaFacebookSquare size={30}></FaFacebookSquare>
