@@ -1,8 +1,17 @@
-function App() {
+import FunctionArg from "./components/state/FunctionArg"
+import Initialisation from "./components/state/Initialisation"
+import { ObjectUpdate } from "./components/ObjectUpdate"
+import ChangingInputs_At_Once from "./components/state/ChangingInputs_At_Once"
+import DerivedStates from "./components/state/DerivedStates"
 
+function App() {
   return (
     <div className="App">
-      hellow world
+      {/* <FunctionArg/> */}
+      {/* <Initialisation/> */}
+      {/* <ObjectUpdate/> */}
+      {/* <ChangingInputs_At_Once/> */}
+      <DerivedStates/>
     </div>
   )
 }
