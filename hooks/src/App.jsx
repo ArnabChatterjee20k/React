@@ -1,6 +1,6 @@
 import FunctionArg from "./components/state/FunctionArg"
 import Initialisation from "./components/state/Initialisation"
-import { ObjectUpdate } from "./components/ObjectUpdate"
+import { ObjectUpdate } from "./components/state/ObjectUpdate"
 import ChangingInputs_At_Once from "./components/state/ChangingInputs_At_Once"
 import DerivedStates from "./components/state/DerivedStates"
 
