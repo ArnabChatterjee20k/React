@@ -8,13 +8,16 @@ import EffectComponent from "./components/effect/EffectComponent"
 import ContextComponent from "./components/Context/Basics/ContextComponent"
 import ModularContextComponent from "./components/Context/Modular_and_Nested/ModularContextComponent"
 
+// use ref
+import RefComponent from "./components/ref/RefComponent"
 function App() {
   return (
     <div className="App">
       {/* <StateComponent/> */}
       {/* <EffectComponent/> */}
       {/* <ContextComponent/> */}
-      <ModularContextComponent/>
+      {/* <ModularContextComponent/> */}
+      <RefComponent/>
     </div>
   )
 }
