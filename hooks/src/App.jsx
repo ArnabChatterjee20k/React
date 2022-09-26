@@ -10,6 +10,10 @@ import ModularContextComponent from "./components/Context/Modular_and_Nested/Mod
 
 // use ref
 import RefComponent from "./components/ref/RefComponent"
+
+// use memo
+import { MemoComponent } from "./components/memo/MemoComponent"
+
 function App() {
   return (
     <div className="App">
@@ -17,7 +21,8 @@ function App() {
       {/* <EffectComponent/> */}
       {/* <ContextComponent/> */}
       {/* <ModularContextComponent/> */}
-      <RefComponent/>
+      {/* <RefComponent/> */}
+      <MemoComponent/>
     </div>
   )
 }
