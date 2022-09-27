@@ -14,6 +14,8 @@ import RefComponent from "./components/ref/RefComponent"
 // use memo
 import { MemoComponent } from "./components/memo/MemoComponent"
 
+// useCallback
+import CallbackComponent from "./components/Callback/CallbackComponent"
 function App() {
   return (
     <div className="App">
@@ -22,7 +24,8 @@ function App() {
       {/* <ContextComponent/> */}
       {/* <ModularContextComponent/> */}
       {/* <RefComponent/> */}
-      <MemoComponent/>
+      {/* <MemoComponent/> */}
+      <CallbackComponent/>
     </div>
   )
 }
