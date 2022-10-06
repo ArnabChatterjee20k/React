@@ -2,7 +2,9 @@ import { useQuery } from "@tanstack/react-query";
 import { fetcher } from "./fetcher";
 const Post = ({ postId, goBack }) => {
   const { data, isLoading } = useQuery(["post", postId], () =>
-    fetcher(`https://jsonplaceholder.typicode.com/todos/${postId}`)
+    fetcher(`https://jsonplaceholder.typicode.com/todos/${postId}`),{
+        cacheTime:0 // isLoading will be always true
+    }
   );
   if (isLoading) return <h2>Loading.........</h2>;
   return (
