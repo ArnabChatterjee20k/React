@@ -6,7 +6,8 @@ import Post from "./Post";
 
 const Blog = () => {
   const { data: todos, isLoading } = useQuery(["post"], () =>
-    fetcher(`https://jsonplaceholder.typicode.com/todos`)
+    fetcher(`https://jsonplaceholder.typicode.com/todos`),
+    {select:result=>result.slice(0,5)}
   );
   const [postID, setPostID] = useState(null);
 
