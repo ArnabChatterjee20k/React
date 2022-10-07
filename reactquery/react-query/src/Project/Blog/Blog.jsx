@@ -8,7 +8,7 @@ const Blog = () => {
   const { data: todos, isLoading } = useQuery(
     ["post"],
     () => fetcher(`https://jsonplaceholder.typicode.com/todos`),
-    { select: (result) => result.slice(0, 5) , staleTime:Infinity}
+    { select: (result) => result.slice(0, 5) , staleTime:Infinity,refetchInterval:2000} // automatically fetching still stale time infinity
   );
   const [postID, setPostID] = useState(null);
   const [id, setId] = useState(1);
